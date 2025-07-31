@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style/style.css" />
+        <title>Furniture Landing Page</title>
+    </head>
+    <body>
+        <header id="header">
+            <h1>Furniture</h1>
+            <nav class="navigation">
+                <ul class="navigation-list">
+                    <li class="navigation-list-item">
+                        <a href="#introduction">Furniture</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a href="#shop">Shop</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a href="#about-us">About Us</a>
+                    </li>
+                    <li class="navigation-list-item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="basket">
+                <button class="basket-btn" id="btnBasket">
+                    <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 24 24"
+                        fill="white"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M7 4V2C7 1.44772 7.44772 1 8 1C8.55228 1 9 1.44772 9 2V4H15V2C15 1.44772 15.4477 1 16 1C16.5523 1 17 1.44772 17 2V4H20C20.5523 4 21 4.44772 21 5C21 5.12482 20.9823 5.24863 20.9477 5.36729L18.9477 12.3673C18.7839 12.9401 18.2546 13.3333 17.657 13.3333H6.34303C5.74541 13.3333 5.2161 12.9401 5.05227 12.3673L3.05227 5.36729C2.88474 4.77249 3.27306 4.15443 3.86787 3.9869C3.98653 3.95228 4.11034 3.93457 4.23515 3.93457H7ZM6.34303 15.3333H17.657C18.7812 15.3333 19.657 16.2092 19.657 17.3333V18C19.657 19.1046 18.7616 20 17.657 20H6.34303C5.23847 20 4.34303 19.1046 4.34303 18V17.3333C4.34303 16.2092 5.21892 15.3333 6.34303 15.3333Z"
+                        />
+                    </svg>
+                </button>
+            </div>
+        </header>
+        <main>
+            <section
+                class="introduction scale-animation-element"
+                id="introduction"
+            >
+                <div class="title-block">
+                    <h2 class="title scale-animation-element">
+                        Make Your Interior<br />
+                        More Modern
+                    </h2>
+                    <p class="subtitle scale-animation-element">
+                        Turn your room with panto into a lot more minimalist and
+                        modern with ease and speed
+                    </p>
+                    <form action="" class="scale-animation-element">
+                        <div class="input-box-search">
+                            <input
+                                type="text"
+                                id="search"
+                                placeholder="Search furniture"
+                            />
+                            <label for="search">
+                                <button id="btnSearch">
+                                    <svg
+                                        width="40"
+                                        height="40"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <g transform="rotate(45 12 12)">
+                                            <circle
+                                                cx="10"
+                                                cy="10"
+                                                r="6"
+                                                stroke="white"
+                                                stroke-width="2"
+                                            />
+                                            <line
+                                                x1="10"
+                                                y1="16"
+                                                x2="10"
+                                                y2="22"
+                                                stroke="white"
+                                                stroke-width="2"
+                                            />
+                                        </g>
+                                    </svg>
+                                </button>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="action-wrapper" id="actionWrapper"></div>
+            </section>
+            <section class="choosing" id="choosing">
+                <h2 class="scale-animation-element">Why choosing us</h2>
+                <article class="choosing-block scale-animation-element">
+                    <h4 class="title-choosing">Luxury facilities</h4>
+                    <p class="info-choosing">
+                        The advantage of hiring a workspace with us is that
+                        givees you comfortable service and all-around
+                        facilities.
+                    </p>
+                    <a class="more-choosing" href="#">More Info &#62;</a>
+                </article>
+                <article class="choosing-block scale-animation-element">
+                    <h4 class="title-choosing">Affordable Price</h4>
+                    <p class="info-choosing">
+                        You can get a workspace of the highst quality at an
+                        affordable price and still enjoy the facilities that are
+                        oly here.
+                    </p>
+                    <a class="more-choosing" href="#">More Info &#62;</a>
+                </article>
+                <article class="choosing-block scale-animation-element">
+                    <h4 class="title-choosing">Many Choices</h4>
+                    <p class="info-choosing">
+                        We provide many unique work space choices so that you
+                        can choose the workspace to your liking.
+                    </p>
+                    <a class="more-choosing" href="#">More Info &#62;</a>
+                </article>
+            </section>
+            <section class="shop" id="shop">
+                <article class="sell-product" id="sellProduct">
+                    <h2 class="scale-animation-element">
+                        Best selling products
+                    </h2>
+                    <nav
+                        class="sell-tab-filter scale-animation-element"
+                        id="sellTabFilter"
+                    >
+                        <input type="radio" name="product" id="chair" checked />
+                        <label for="chair">Chair</label>
+
+                        <input type="radio" name="product" id="bed" />
+                        <label for="bed">Bed</label>
+
+                        <input type="radio" name="product" id="closet" />
+                        <label for="closet">Closet</label>
+
+                        <input type="radio" name="product" id="lamp" />
+                        <label for="lamp">Lamp</label>
+                    </nav>
+                    <ul class="sell-card-wrapper" id="sellCardWrapper">
+                        <li class="sell-card scale-animation-element">
+                            <figure class="sell-card-img">
+                                <img
+                                    src="./images/Chair_Rocking.png"
+                                    alt="image"
+                                    width="250"
+                                />
+                            </figure>
+                            <div class="sell-card-action">
+                                <p class="sell-card-type">Chair</p>
+                                <p class="sell-card-title">Rocking Chair</p>
+
+                                <form
+                                    action=""
+                                    class="sell-card-raiting rating"
+                                >
+                                    <div class="rating">
+                                        <input
+                                            value="5"
+                                            name="rate"
+                                            id="star5"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star5"></label>
+                                        <input
+                                            value="4"
+                                            name="rate"
+                                            id="star4"
+                                            type="radio"
+                                            checked=""
+                                        />
+                                        <label title="text" for="star4"></label>
+                                        <input
+                                            value="3"
+                                            name="rate"
+                                            id="star3"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star3"></label>
+                                        <input
+                                            value="2"
+                                            name="rate"
+                                            id="star2"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star2"></label>
+                                        <input
+                                            value="1"
+                                            name="rate"
+                                            id="star1"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star1"></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="sell-card-fotter">
+                                <p class="sell-card-price">$323</p>
+                                <button class="sell-card-action-add">+</button>
+                            </div>
+                        </li>
+
+                        <li class="sell-card scale-animation-element">
+                            <div class="sell-card-img">
+                                <img
+                                    src="./images/Chair_Navy.png"
+                                    alt="image"
+                                    width="250"
+                                />
+                            </div>
+                            <div class="sell-card-action">
+                                <div class="sell-card-type">Chair</div>
+                                <div class="sell-card-title">Navy Chair</div>
+
+                                <form action="" class="sell-card-raiting">
+                                    <div class="rating">
+                                        <input
+                                            value="5"
+                                            name="rate"
+                                            id="star5"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star5"></label>
+                                        <input
+                                            value="4"
+                                            name="rate"
+                                            id="star4"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star4"></label>
+                                        <input
+                                            value="3"
+                                            name="rate"
+                                            id="star3"
+                                            type="radio"
+                                            checked=""
+                                        />
+                                        <label title="text" for="star3"></label>
+                                        <input
+                                            value="2"
+                                            name="rate"
+                                            id="star2"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star2"></label>
+                                        <input
+                                            value="1"
+                                            name="rate"
+                                            id="star1"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star1"></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="sell-card-fotter">
+                                <div class="sell-card-price">$187</div>
+                                <button class="sell-card-action-add">+</button>
+                            </div>
+                        </li>
+
+                        <li class="sell-card scale-animation-element">
+                            <div class="sell-card-img">
+                                <img
+                                    src="./images/Chair_TonHoffmann.png"
+                                    alt="image"
+                                    width="250"
+                                />
+                            </div>
+                            <div class="sell-card-action">
+                                <div class="sell-card-type">Chair</div>
+                                <div class="sell-card-title">
+                                    TonHoffmann Chair
+                                </div>
+
+                                <form action="" class="sell-card-raiting">
+                                    <div class="rating">
+                                        <input
+                                            value="5"
+                                            name="rate"
+                                            id="star5"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star5"></label>
+                                        <input
+                                            value="4"
+                                            name="rate"
+                                            id="star4"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star4"></label>
+                                        <input
+                                            value="3"
+                                            name="rate"
+                                            id="star3"
+                                            type="radio"
+                                            checked=""
+                                        />
+                                        <label title="text" for="star3"></label>
+                                        <input
+                                            value="2"
+                                            name="rate"
+                                            id="star2"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star2"></label>
+                                        <input
+                                            value="1"
+                                            name="rate"
+                                            id="star1"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star1"></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="sell-card-fotter">
+                                <div class="sell-card-price">$386</div>
+                                <button class="sell-card-action-add">+</button>
+                            </div>
+                        </li>
+
+                        <li class="sell-card scale-animation-element">
+                            <div class="sell-card-img">
+                                <img
+                                    src="./images/Chair_LudwigMies.png"
+                                    alt="image"
+                                    width="250"
+                                />
+                            </div>
+                            <div class="sell-card-action">
+                                <div class="sell-card-type">Chair</div>
+                                <div class="sell-card-title">
+                                    LudwigMies Chair
+                                </div>
+
+                                <form action="" class="sell-card-raiting">
+                                    <div class="rating">
+                                        <input
+                                            value="5"
+                                            name="rate"
+                                            id="star5"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star5"></label>
+                                        <input
+                                            value="4"
+                                            name="rate"
+                                            id="star4"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star4"></label>
+                                        <input
+                                            value="3"
+                                            name="rate"
+                                            id="star3"
+                                            type="radio"
+                                            checked=""
+                                        />
+                                        <label title="text" for="star3"></label>
+                                        <input
+                                            value="2"
+                                            name="rate"
+                                            id="star2"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star2"></label>
+                                        <input
+                                            value="1"
+                                            name="rate"
+                                            id="star1"
+                                            type="radio"
+                                        />
+                                        <label title="text" for="star1"></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="sell-card-fotter">
+                                <div class="sell-card-price">$473</div>
+                                <button class="sell-card-action-add">+</button>
+                            </div>
+                        </li>
+                    </ul>
+                    <a class="view-all" href="#">View All &#62;</a>
+                </article>
+            </section>
+            <section class="about-us" id="about-us">
+                <article class="about-us-wrapper">
+                    <div class="about-us-left-block-up scale-animation-element">
+                        <figure>
+                            <img
+                                src="./images/example-1.jpg"
+                                alt="Ілюстрація прикладу"
+                            />
+                        </figure>
+                    </div>
+                    <div
+                        class="about-us-right-block-up scale-animation-element"
+                    >
+                        <h2>EXPERIENCES</h2>
+                        <h3>We Provide You The Best Experience</h3>
+                        <p>
+                            You don't have to worry about the result because all
+                            of these interiors are made by people who are
+                            professionals in their fields with an elegant and
+                            lucurious style and with premium quality materials
+                        </p>
+                        <a href="#">More Info &#62;</a>
+                    </div>
+                </article>
+                <article class="about-us-wrapper">
+                    <div
+                        class="about-us-left-block-middle scale-animation-element"
+                    >
+                        <h2>MATERIALS</h2>
+                        <h3>Very Serious Materials For Making Furniture</h3>
+                        <p>
+                            Because panto was very serious about designing
+                            furniture for our environment, using a very
+                            expensive and famous capital but at a relatively low
+                            price
+                        </p>
+                        <a href="#">More info &#62;</a>
+                    </div>
+                    <div
+                        class="about-us-right-block-middle scale-animation-element"
+                    >
+                        <div class="img-1">
+                            <figure>
+                                <img
+                                    src="./images/example-6.jpg"
+                                    alt="Ілюстрація прикладу"
+                                    width="300"
+                                />
+                            </figure>
+                        </div>
+                        <div class="img-2">
+                            <figure>
+                                <img
+                                    src="./images/example-7.jpg"
+                                    alt="Ілюстрація прикладу"
+                                    width="300"
+                                />
+                            </figure>
+                        </div>
+                        <div class="img-3">
+                            <figure>
+                                <img
+                                    src="./images/example-5.jpg"
+                                    alt="Ілюстрація прикладу"
+                                    width="300"
+                                />
+                            </figure>
+                        </div>
+                    </div>
+                </article>
+                <article class="about-us-wrapper">
+                    <h2 class="scale-animation-element">TESTIMONIALS</h2>
+                    <h3 class="scale-animation-element">Our Client Reviews</h3>
+                    <div class="about-us-wrapper-down">
+                        <div
+                            class="about-us-item-down scale-animation-element background-img-1"
+                        >
+                            <div class="user-card-review-wrapper">
+                                <h4>Nick Luis</h4>
+                                <p>
+                                    Completely satisfied with the quality and
+                                    design of the sofa! In my opinion, a very
+                                    successful and stylish model
+                                </p>
+                                <a href="#">More info &#62;</a>
+                            </div>
+                        </div>
+                        <div
+                            class="about-us-item-down scale-animation-element background-img-2"
+                        >
+                            <div class="user-card-review-wrapper">
+                                <h4>Arina Marnis</h4>
+                                <p>
+                                    Very happy with the purchase! In addition to
+                                    the wonderful sofa, we received a bean bag
+                                    chair as a gift.
+                                </p>
+                                <a href="#">More info &#62;</a>
+                            </div>
+                        </div>
+                        <div
+                            class="about-us-item-down scale-animation-element background-img-3"
+                        >
+                            <div class="user-card-review-wrapper">
+                                <h4>John Dreig</h4>
+                                <p>
+                                    The chair is wonderful. I ordered it in
+                                    graphite color, I am very satisfied, the
+                                    chair looks stylish and expensive
+                                </p>
+                                <a href="#">More info &#62;</a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="contact" id="contact">
+                <article class="contact-wrapper scale-animation-element">
+                    <div class="contact-image">
+                        <h2>Leave your contact information</h2>
+                        <p>
+                            If you have any questions about our furniture or
+                            want to receive an individual offer — fill in the
+                            form and we will contact you as soon as possible.
+                        </p>
+                    </div>
+                    <div class="contact-form">
+                        <form action="#" autocomplete="on">
+                            <label for="username">Name</label>
+                            <input
+                                type="text"
+                                name="username"
+                                id="username"
+                                placeholder="Your name"
+                                required
+                            />
+                            <label for="email">Email</label>
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                placeholder="you@example.com"
+                                required
+                            />
+                            <label for="description">Message</label>
+                            <textarea
+                                name="description"
+                                id="description"
+                                placeholder="Your message..."
+                                rows="4"
+                            ></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <footer>made by neketobro</footer>
+        <script src="./dist/scripts.js"></script>
+    </body>
+</html>
